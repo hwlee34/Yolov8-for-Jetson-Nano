@@ -12,3 +12,8 @@ Using yolov8&amp;TensorRT with Jetson Nano
 export DISPLAY=$DISPLAY
 xhost +
 ```
+---
+run    
+```bash
+docker run --gpus all -it --rm --network host -e DISPLAY=$DISPLAY -v /PATH/TO/:/workspace {image_tag}:latest
+```
